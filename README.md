@@ -16,8 +16,14 @@ You don't need to make any changes to the Amazon Fire itself, no Developer debug
 I was using the FLIRC function on the first generation Amazon Fire, and it was ok, but when upgrading to a new Amazon Fire 4k stick I had to use the ADB method using the Control4 provided drivers.
 It was sooooo slowwwww it was painful to use. So I bought an IRUSB to do it, but this was convoluted I became frustrated at how painful it was to set it up.
 
-So this implements exactly the same functions as the Amazon Fire remote. This includes long presses of the keys so you can fast forward or rewind properly, or access the system menu by pressing the guide button (instead the long press of the home button).
+So this implements exactly the same functions as the Amazon Fire remote. This includes long presses of the keys so you can fast forward or rewind properly, or access the system menu by long pressing the guide button (instead the long press of the home button).
 
 The downsides are you are going have to buy some stuff and its going to take you an hour to set it up, but apart from that its free - and the source is fully available if you want to make changes (please do and submit a pull request for the benefit of all).
 
 ## Setup
+1. Setup your Raspberry PI as per https://github.com/niallel/pi-ip-usb-hid
+2. Download the driver from releases page above and install using Composer on the C4 director.
+3. Setup the driver using the IP address of the Raspberry PI
+
+## Future Features
+I'm planning on adding the ability to fast launch apps on the Amazon Fire, and also to install things easily, such as Kodi etc. But these will come with further development of https://github.com/niallel/pi-ip-usb-hid
